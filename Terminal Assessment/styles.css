@@ -1,0 +1,164 @@
+/* Mobile‑first base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background: #fafafa;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Mobile layout (default) */
+header {
+  background: #0056b3;
+  color: white;
+  padding: 1rem 0;
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+header nav h1 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+header nav li + li {
+  margin-left: 0;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 1.5rem 0;
+}
+
+main article,
+main aside {
+  margin-bottom: 1.5rem;
+}
+
+/* ---- Tablet and desktop (media queries) ---- */
+
+/* Small tablet / landscape mobile */
+@media (min-width: 576px) {
+  header nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header nav ul {
+    flex-direction: row;
+  }
+
+  header nav li + li {
+    margin-left: 1rem;
+  }
+
+  header nav a {
+    padding: 0.4rem 0;
+    border-bottom: none;
+  }
+
+  main {
+    padding: 2rem 0;
+  }
+}
+
+/* Tablet / small desktop */
+@media (min-width: 768px) {
+  header nav ul {
+    gap: 1rem;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+  }
+
+  main article {
+    margin-bottom: 0;
+  }
+}
+
+/* Desktop / larger screens */
+@media (min-width: 1024px) {
+  header nav ul {
+    gap: 2rem;
+  }
+
+  header nav a {
+    font-size: 1.1rem;
+  }
+}
+
+/* Tablet portrait / small tablet styling tweaks */
+@media (min-width: 481px) and (max-width: 767px) and (orientation: portrait) {
+  header nav ul {
+    flex-wrap: wrap;
+  }
+
+  header nav li + li {
+    margin-left: 0.75rem;
+  }
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #ccc;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+footer a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
