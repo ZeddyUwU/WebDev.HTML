@@ -1,0 +1,64 @@
+/* Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Cosmic Sans, cursive;
+    margin: 40px;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* Header & Nav */
+header {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* FlexBox NavBar */
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: #007BFF;
+    padding: 10px 15px;
+    border-radius: 6px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background-color: #0056b3;
+}
+
+/* Responsive Behavior */
+@media (max-width: 600px) {
+    header h1 {
+        margin-bottom: 8px;
+        font-size: 1.4rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .nav-link {
+        text-align: center;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,105 @@
+/* Base */
+
+body {
+    font-family: Comic Sans, cursive;
+    margin: 40px;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* Header & Nav */
+
+header {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #333;
+}
+
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.profile-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Profile */
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #ddd;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    color: #444;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 5px;
+}
+
+section ul {
+    margin: 10px 0;
+    padding-left: 2 Wifepx;
+}
+
+/* Contact */
+
+/* .contact {
+    max-width: 500px;
+}
+
+.contact label {
+    display: block;
+    margin-top: 10px;
+}
+
+.contact nav a { 
+	margin-right: 15px; 
+	text-decoration: none; 
+	color: #007BFF; 
+}
+
+.contact nav a:hover { 
+	text-decoration: underline; 
+}
+
+.contact form { 
+	max-width: 500px; 
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 8px;S
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #0056b3;
+} */
